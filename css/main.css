@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   line-height: 1.7;
@@ -113,9 +117,11 @@ p {
   background: url('../img/parallax2.jpg') no-repeat center center/cover;
   min-height: 400px;
   background-attachment: fixed;
+  opacity: 0.75;
 }
 
-.portfolio-img h1 {
+.portfolio-img h1,
+.contact-img h1 {
   text-align: center;
   padding-top: 150px;
   font-size: 55px;
@@ -128,4 +134,66 @@ p {
 .button {
   text-align: center;
   padding: 30px 0;
+}
+
+/* Contact */
+
+.contact-container {
+  padding: 30px 120px;
+}
+
+.contact-img {
+  background: url('../img/parallax3.jpg') no-repeat center center/cover;
+  min-height: 400px;
+  background-attachment: fixed;
+  opacity: 0.75;
+}
+
+.form-group {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.form-group .form-control {
+  margin-bottom: 15px;
+}
+
+.flex-forms {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.form-group .form-control input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: 1px solid #ccc;
+  background: transparent;
+}
+
+/* Footer */
+
+.footer-container {
+  background-color: #333;
+  color: #fff;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-container > div {
+  margin: 10px 0;
+}
+
+.footer-container .social i {
+  font-size: 1.7rem;
+  margin-right: 10px;
+}
+
+.footer-container .footer-link {
+  color: #fff;
+  text-decoration: underline;
 }

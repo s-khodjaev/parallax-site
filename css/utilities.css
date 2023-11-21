@@ -22,6 +22,18 @@
   cursor: pointer;
 }
 
+.btn-light,
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.btn-dark,
+.bg-dark {
+  background-color: #333;
+  color: #fff;
+}
+
 /* Section Header */
 
 .section-header {
@@ -58,7 +70,7 @@
 
 .flex-columns .row .column .column-1,
 .flex-columns .row .column .column-2 {
-  height: 100%ß;
+  height: 100%;
 }
 
 .flex-columns .row .column .column-1 {
